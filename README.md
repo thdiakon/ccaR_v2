@@ -13,9 +13,9 @@ devtools::install_github('thdiakon/ccaR')
 
 ```
 
-<img src="man/figures/README-plot-1.PNG" align="center" width="520" />
 
-![](man/figures/README-plot-1.PNG<!-- -->
+## Visualization of the pairwise CCA(%) with a heatmap
+<img src="man/figures/README-plot-1.PNG" align="center" width="620" />
 
 
 If package ccaR (or code from this package) is used for investigating overlap of primary studies between reviews, please cite the following manuscript:
