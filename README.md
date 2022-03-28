@@ -13,6 +13,7 @@ devtools::install_github('thdiakon/ccaR')
 
 ```
 
-If package ccaR (or code from this package) is used for investigating overlap of primary studies between reviews, please cite thefollowing manuscript:
+If package ccaR (or code from this package) is used for investigating overlap of primary studies between reviews, please cite the following manuscript:
+
 Bougioukas KI, Vounzoulaki E, Mantsiou CD, Savvides ED, Karakosta C, Diakonidis T, et al. Methods for depicting overlap in overviews of systematic reviews: An introduction to static tabular and graphical displays. J Clin Epidemiol 2021;132:34–45. doi:https://doi.org/10.1016/j.jclinepi.2020.12.004.
 
