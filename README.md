@@ -14,7 +14,7 @@ devtools::install_github('thdiakon/ccaR')
 ```
 
 
-![](man/figures/README-plot1.PNG<!-- -->
+![](man/figures/README-plot1.png<!-- -->
 
 
 If package ccaR (or code from this package) is used for investigating overlap of primary studies between reviews, please cite the following manuscript:
