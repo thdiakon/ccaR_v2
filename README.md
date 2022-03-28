@@ -13,7 +13,7 @@ devtools::install_github('thdiakon/ccaR')
 
 ```
 
-<img src="man/figures/README-plot-1.PNG" align="right" width="320" />
+<img src="man/figures/README-plot-1.PNG" align="center" width="520" />
 
 ![](man/figures/README-plot-1.PNG<!-- -->
 
