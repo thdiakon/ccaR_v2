@@ -41,7 +41,7 @@ heat_cca <- function(cm, fontsize=5, chroma="#527e11"){
     V4 <- colnames(cm)
     r2 <- c()
     for (i in 1:ncol(cm)){
-        r2[i] <- sum(cm[i])
+        r2[i] <- sum(cm[i], na.rm = T)
         r2[i] <- paste(r2[i], "*")
     }
 
