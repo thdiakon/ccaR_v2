@@ -53,7 +53,13 @@ cca <- function(cm){
   }
   
   overall <- nrow(j) + 1
-  reviews[overall] <- "Overall"
+  
+  if (sum(is.na(cm)) == 0) {
+    reviews[overall] <- "Overall"
+  } else {
+    reviews[overall] <- "Overall (adusted for structural zeros)"
+  }
+  
   overlap_counts[overall] <- " "
   N[overall] <- sum(cm, na.rm = T)
   r[overall] <- nrow(cm)
