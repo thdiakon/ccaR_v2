@@ -27,19 +27,12 @@ cca2 <- function(cm){
   Structural_zeros <- sum(is.na(cm))
 
 
-
-  message(
-    if (sum(is.na(cm)) != 0) {
-      "the CCA formula has been adjusted for structural zeros"
-    }
-  )
-
-
   if (sum(is.na(cm)) == 0) {
     res <- data.frame(reviews, N, r, c, CCA_Proportion, CCA_Percentage, stringsAsFactors=FALSE)
 
   } else {
     res <- data.frame(reviews, N, r, c, Structural_zeros, CCA_Proportion, CCA_Percentage, stringsAsFactors=FALSE)
+    message("the CCA formula has been adjusted for structural zeros")
   }
 
       return(res)
