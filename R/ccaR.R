@@ -63,7 +63,7 @@ cca <- function(cm){
   CCA_Percentage[overall] <- round(CCA_Proportion[overall]*100, digits = 1)
   
   res <- data.frame(reviews, overlap_counts, N, r, c, X, CCA_Proportion, CCA_Percentage, stringsAsFactors=FALSE)
-  rename(res, Structural_zeros = X)
+  names(res)[names(res) == 'X'] <- 'Structural_zeros'
   
       return(res)
   
