@@ -65,12 +65,17 @@ cca <- function(cm){
   r[overall] <- nrow(cm)
   c[overall] <- ncol(cm)
   X[overall] <- sum(is.na(cm))
-  CCA_Proportion[overall] <- (N[overall]-r[overall])/((r[overall]*c[overall])-r[overall]-sum(is.na(cm)))
+  CCA_Proportion[overall] <- (N[overall]-r[overall])/((r[overall]*c[overall])-r[overall]-X[overall])
   CCA_Percentage[overall] <- round(CCA_Proportion[overall]*100, digits = 1)
   
-  res <- data.frame(reviews, overlap_counts, N, r, c, X, CCA_Proportion, CCA_Percentage, stringsAsFactors=FALSE)
-  names(res)[names(res) == 'X'] <- 'Structural_zeros'
   
+   if (sum(is.na(cm)) == 0) {
+    res <- data.frame(reviews, overlap_counts, N, r, c, CCA_Proportion, CCA_Percentage, stringsAsFactors=FALSE)
+  } else {
+     res <- data.frame(reviews, overlap_counts, N, r, c, X, CCA_Proportion, CCA_Percentage, stringsAsFactors=FALSE)
+     names(res)[names(res) == 'X'] <- 'Structural_zeros'
+  }
+
       return(res)
   
 }
