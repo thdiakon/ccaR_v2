@@ -14,6 +14,11 @@ devtools::install_github('thdiakon/ccaR')
 ```
 
 
+## CCA Table
+<img src="man/figures/cca_table.PNG" align="center" width="620" />
+
+
+
 ## Visualization of the pairwise CCA(%) with a heatmap
 <img src="man/figures/README-plot-1.PNG" align="center" width="620" />
 
