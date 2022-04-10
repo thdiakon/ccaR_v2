@@ -10,7 +10,7 @@
 #'
 #' @export
 
-cca <- function(cm){
+cca_table <- function(cm){
 
   
   cm <- cm[, -1]
