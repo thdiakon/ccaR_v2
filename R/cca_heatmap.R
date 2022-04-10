@@ -18,7 +18,11 @@ cca_heatmap <- function(cm, fontsize=5, chroma="#527e11"){
     c(missing(fontsize), missing(chroma))  
     
     # create a table with all the parameters
-
+    
+    V1<-c()
+    V2<-c()
+    CCA_Percentage<-0
+    
     a <- cca_table(cm)
     cm <- cm[, -1]
     cm <- cm[, order(colnames(cm))]
