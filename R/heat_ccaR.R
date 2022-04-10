@@ -8,21 +8,21 @@
 #'
 #' @param chroma The color of the heatmap
 #'
-#' @return heat_cca
+#' @return cca_heatmap
 #'
 #' @example man/examples/example2.R
 #'
 #' @export
-heat_cca <- function(cm, fontsize=5, chroma="#527e11"){
+cca_heatmap <- function(cm, fontsize=5, chroma="#527e11"){
 
     c(missing(fontsize), missing(chroma))  
     
     # create a table with all the parameters
-    V1<-c()
-    V2<-c()
-    CCA_Percentage<-0
+    V1 <- c()
+    V2 <- c()
+    CCA_Percentage <- 0
 
-    a <- cca(cm)
+    a <- cca_table(cm)
     cm <- cm[, -1]
     cm <- cm[, order(colnames(cm))]
 
