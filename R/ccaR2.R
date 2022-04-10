@@ -9,7 +9,7 @@
 #' @example man/examples/example1.R
 #'
 #' @export
-cca2 <- function(cm){
+cca <- function(cm){
 
   cm <- cm[, -1]
 
